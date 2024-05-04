@@ -4,20 +4,22 @@ import { MouseEventHandler } from 'react';
 
 interface CustomButtonProps {
   title: string;
-  containerStiles?: string;
+  containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
+  btnType?: 'button' | 'submit';
 }
 
 const CustomButton = ({
   title,
-  containerStiles,
+  containerStyles,
   handleClick,
+  btnType = 'button',
 }: CustomButtonProps) => {
   return (
     <button
       disabled={false}
-      type="button"
-      className={`custom-btn ${containerStiles}`}
+      type={btnType}
+      className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
       <span className="flex-1">{title}</span>
