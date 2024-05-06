@@ -1,4 +1,4 @@
-import { Hero, Search } from '@/components';
+import { CustomFilter, Hero, Search } from '@/components';
 
 export default function Home() {
   return (
@@ -13,6 +13,11 @@ export default function Home() {
 
         <div className="home__filters">
           <Search />
+
+          <div className="home__filter-container">
+            <CustomFilter />
+            <CustomFilter />
+          </div>
         </div>
       </div>
     </main>
