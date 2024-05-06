@@ -1,4 +1,4 @@
-import { Hero } from '@/components';
+import { Hero, Search } from '@/components';
 
 export default function Home() {
   return (
@@ -11,7 +11,9 @@ export default function Home() {
           <p>Explore the cars you might like</p>
         </div>
 
-        <div className="home__filters"></div>
+        <div className="home__filters">
+          <Search />
+        </div>
       </div>
     </main>
   );
