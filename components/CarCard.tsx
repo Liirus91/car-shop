@@ -1,6 +1,12 @@
-interface CarCard {}
+'use client';
 
-const CarCard = () => {
+import { Car } from '@/types';
+
+interface CarCardProps {
+  car: Car;
+}
+
+const CarCard = ({ car }: CarCardProps) => {
   return <div>CarCard</div>;
 };
 
