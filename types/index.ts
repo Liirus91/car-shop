@@ -20,3 +20,8 @@ export interface Filter {
   limit: number;
   model: string;
 }
+
+export interface Option {
+  title: string;
+  value: string;
+}
