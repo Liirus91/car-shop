@@ -30,7 +30,7 @@ const Search = () => {
     e.preventDefault();
 
     if (manufacturer === '' && model === '') {
-      return alert('Please fill out the search field');
+      return alert('Please fill in the search field');
     }
 
     updateSearchParams(model.toLocaleLowerCase(), manufacturer.toLowerCase());
