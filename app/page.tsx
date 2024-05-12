@@ -44,7 +44,10 @@ export default async function Home({ searchParams }: Home) {
               ))}
             </div>
 
-            <ShowMore />
+            <ShowMore
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) : (
           <div className="home__error-container">
